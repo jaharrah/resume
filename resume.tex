@@ -1,0 +1,337 @@
+
+\pdfpagewidth 8.5in
+\pdfpageheight 11in
+\pdfhorigin 1in
+\pdfvorigin 1in
+
+\nopagenumbers
+\parindent=0pt
+
+\font\rm=ptmr at 10pt
+\font\bf=ptmb at 10pt
+\font\it=ptmri at 10pt
+\font\sl=ptmbo at 10pt
+\font\tt=pcrr at 10pt
+\font\tb=pcrb at 10pt
+\font\zdb=pzdr at 10pt
+\font\lgrm=ptmr at 24pt
+\font\smrm=ptmr at 9pt
+\font\superrm=ptmr at 8pt
+
+\def\super#1{\lower -.5ex \hbox{\superrm #1}}
+\def\xmrk{{\zdb 4}}
+
+\rm
+
+{\lgrm Christopher L.~Rorvick\hfill\vbox{\smrm
+\hbox to 3in {\hfil
+921 Canonero Drive\quad $\bullet$\quad Naperville, IL~~60540}
+\hbox to 3in {\hfil
+(630) 416-0382\quad $\bullet$\quad chris@rorvick.com}
+}}
+
+\vskip 5pt \hrule \vskip 10pt
+
+\long\def\section#1#2{\leftskip 1in \noindent\llap{\hbox to 1in {\bf #1\hss}}{#2}\vskip 10pt}
+\long\def\lastsection#1#2{\leftskip 1in \noindent\llap{\hbox to 1in {\bf #1\hss}}{#2}}
+\long\def\subsection#1#2{{\sl #1}\hfill{\bf #2}}
+\def\bulleted#1#2{\setbox0=\hbox{#1\ }\hangindent=\wd0#1 #2}
+
+
+\section{PROFILE}{%
+Software designer with fourteen years experience producing high quality
+solutions across multiple industries using many technologies.
+Eight years in the financial industry focusing on low-latency systems
+and infrastructure supporting automated trading.
+}
+
+\section{EDUCATION}{%
+{\bf University of Illinois}\quad Urbana--Champaign\par
+\subsection{B.S.~in Computer Science}
+    {May 2000}
+}
+
+\section{EXPERIENCE}{%
+\parskip=5pt
+{\bf Cognitive Capital, LLC}\quad Chicago, IL
+
+Liquidity provider to capital markets using proprietary automated trading
+technology.
+
+\vskip 5pt
+\subsection{Software Engineer}
+    {April 2012 -- May 2014}
+
+Member of core development team responsible for company's distributed
+trading platform consisting of a hierarchy of multi-threaded C++
+services.
+
+\bulleted{$\bullet$}{%
+Designed and implemented major overhaul of execution subsystem with
+focus on improving signal attribution and coordination of various
+execution components.  Design considerations included reducing thread
+contention and improving cache efficiency.
+}
+
+\bulleted{$\bullet$}{%
+Implemented new real-time signals as C++ services using specifications
+from financial engineering.  Worked with portfolio managers on rollout
+including facilitating rotational studies, data analysis, and
+implementing reporting of nightly parameterization.
+}
+
+\bulleted{$\bullet$}{%
+Contributed numerous improvements to C++ infrastructure to modernize API
+and reduce boilerplate.
+Identified opportunities for optimization through instrumentation and
+profiling and measured system-wide impact using side-by-side testing
+environment.
+}
+
+\bulleted{$\bullet$}{%
+Planned and implemented migration of CVS repositories to Git.  Retooled
+substantial legacy automation and designed integration process for
+nightly build.  Prepared training material and led instructional
+sessions
+}
+
+\bulleted{$\bullet$}{%
+Designed and implemented automation using Perl to incorporate new
+releases of the IANA (aka, Olson) Time Zone Database into the
+Boost.Date\_Time format used for trading.
+Updates are queued to development (leveraging Git ``plumbing'') for
+validation and reported to the Operations Desk for vetting.
+Process accommodates several deficiencies in Boost design.
+}
+
+\vskip 10pt
+
+{\bf TradeLink, LLC}\quad Chicago, IL
+
+Trading firm participating in a range of asset classes including
+securities, futures, and options.
+
+\vskip 5pt
+\subsection{Software Designer, Algorithmic Trading \& Execution}
+    {September 2010 -- February 2012}
+
+Responsible for maintaining and deploying software for firm's two
+algorithmic trading platforms and implementing and maintaining trading
+strategies within these platforms.
+
+\bulleted{$\bullet$}{%
+Optimized trading of a \$40 million portfolio by migrating execution
+logic from legacy Python platform to C++ smart order router.
+Reduced latency by roughly four milliseconds per transaction.
+}
+
+\bulleted{$\bullet$}{%
+Analyzed execution for a high frequency FX basis trade.
+Automated reporting of time-series data pulled from disparate sources
+into consolidated plots.
+Recommended and implemented several optimizations included refactoring
+the top-level execution logic, bug fixes to the feed handler, and
+tuning the network stack.
+}
+
+\bulleted{$\bullet$}{%
+Implemented FIX trading interface within firm's C++ trading platform
+providing trading strategies with direct connectivity to exchanges.
+}
+\vfil\eject
+
+\subsection{Software Designer / Technical Lead, Application Development}
+    {January 2007 -- August 2010}
+
+Developed and maintained many applications and infrastructure
+components critical to the firm.
+Managed development efforts including providing design and technical
+direction to other developers.
+
+\bulleted{$\bullet$}{%
+Designed and implemented distribution framework for market data
+via shared memory with C++ API.
+Significantly reduced load on network infrastructure and trader
+workstations allowing groups to participate and profit on high-volume
+events that were previously not tradeable at the firm.
+}
+
+\bulleted{$\bullet$}{%
+Managed a project to allow execution desk traders to monitor hundreds of
+positions across the portfolios of its managed funds.  Included C++
+libraries, server, and client application.
+}
+
+\bulleted{$\bullet$}{%
+Maintained C++ screen trading application displaying a ``price ladder''
+including aggregate book and trade volumes.  Supported click trading and
+auto-spreads.
+}
+
+\bulleted{$\bullet$}{%
+Implemented multi-threaded C++ feed handler for Eurex's
+{\it New Socket Datafeed} providing non-netted, low-latency price data
+to fixed income group operating in London office.
+}
+
+\vskip 5pt
+\subsection{Software Developer, Application Development}
+    {June 2005 -- June 2006}
+
+Maintained a number of trading applications and back office software
+critical to the day-to-day operations of the firm.
+
+\bulleted{$\bullet$}{%
+Enhanced and maintained a suite of C++ options trading applications
+including two auto-traders and a program for monitoring implied
+volatilities in real-time.
+}
+
+\bulleted{$\bullet$}{%
+Responsible for maintaining firm's legacy Java platform including
+post-trade and back-office applications.  
+Automated build process and refactored code base into versioned
+reusable modules.
+}
+
+\bulleted{$\bullet$}{%
+One of two developers maintaining and providing 24x7 production support
+for clearing system.
+Implemented Python modules for processing semi-standard and
+firm-specific data formats.
+}
+
+\vskip 10pt
+
+{\bf Impact Forensics, LLC}\quad Chicago, IL
+
+\subsection{Manager of Electronic Discovery}
+    {July 2006 -- December 2006}
+
+Managed lab for firm specializing in electronic discovery and expert
+witness services including capacity planning and acquiring necessary
+hardware.  Performed numerous on-site data acquisitions following
+chain of custody procedures.
+
+\vskip 10pt
+
+{\bf U.S.~Cellular Corp.}\quad Bensenville, IL
+
+\subsection{\sl Programmer / Systems Analyst}
+    {February 2003 -- May 2005}
+
+Worked on and lead development efforts in areas including account
+management, billing, and business intelligence.  Representative on ATIS
+committee responsible for standardizing local number portability between
+wireless carriers.
+
+\vskip 10pt
+
+{\bf Universal Access, Inc.}\quad Chicago, IL
+
+\subsection{\sl Senior Developer}
+    {April 2001 -- April 2002}
+
+Development lead on a team building a platform for automated pricing
+and provisioning of long-haul telecommunication circuits using Java
+J2EE technologies.
+
+\vskip 10pt
+
+{\bf Second Millennium Consulting, Inc.}\quad Chicago, IL
+
+\subsection{Software Developer}
+    {January 2000 -- March 2001}
+
+Implemented solutions for clients of this startup consulting firm
+specializing in Java J2EE and Oracle.  Worked in several industries
+including media, marketing, and telecommunications.
+}
+\vfil\eject
+
+\section{PUBLIC}{%
+\parskip=3pt
+\subsection{Git}        {\tb https://git.kernel.org/pub/scm/git/git.git}
+
+\bulleted{$\bullet$}{%
+Added support for per author time zones to {\tt cvsimport(1)} command.
+Allows commit log timestamps to be associated with appropriate UTC
+offsets.
+}
+
+\bulleted{$\bullet$}{%
+References are generally allowed to update when pushing to a remote
+repository if the new commit is a descendent of the old.  Added logic to
+reject ``fast-forwarding'' a tag unless it is forced (e.g., with the
+{\tt -{-}force} option.)
+}
+
+\bulleted{$\bullet$}{%
+Various additions and updates to documentation.
+}
+
+\vskip 8pt
+
+\subsection{CVSps}       {\tb https://git.gitorious.org/cvsps/cvsps.git}
+
+Eric S.\ Raymond took over CVSps in late 2012 and added an option to
+dump a CVS repository to a Git {\tt fast-import(1)} stream.  Tested
+development tree for these changes and contributed numerous patches.
+
+\vskip 8pt
+
+\subsection{Hobson Village directory}
+                      {\tb https://github.com/crorvick/hv-directory.git}
+
+Automated generation of neighborhood directory saving many hours of
+volunteer time annually.  Wrote a Perl script to convert CSV input data
+into \TeX\ which is then used to generate PDF output ready for printing.
+}
+
+\section{SKILLS}{%
+{\bf Programming:} C, C++, Perl, Python, Java
+
+{\bf Scripting:} Bourne/Bash, Sed, AWK, Tcl, Autotools, Make, SQL
+
+{\bf Version control:} Git, CVS, Subversion, SCCS
+
+{\bf Databases:} PostgreSQL, Sybase, MySQL, Oracle
+
+{\bf Data analysis:} R, gnuplot, Octave
+
+{\bf Operating systems:} Redhat/Fedora Linux, Solaris, HP-UX
+
+{\bf Libraries:} Boost, Intel TBB, pthreads, Armadillo, ACE, GTK+
+
+{\bf Miscellaneous:} TCP/IP networking, GNU software, \TeX
+}
+
+\section{TRAINING}{%
+\xmrk\quad Astoria Seminar, Extraordinary C++
+
+\xmrk\quad Sun Certified Programmer for the Java 2 Platform
+
+\xmrk\quad Application Development for WebSphere MQ 5.3
+
+\xmrk\quad Application Development for Tuxedo 6.5
+
+\xmrk\quad HP-UX Administration for Experienced UNIX Administrators
+
+}
+
+% Need to be smarter about how \section is defined so that the \vskip
+% at the end doesn't cause an empty page.
+\lastsection{OTHER}{%
+Treasurer -- Hobson Village Community Association\hfill
+2008 -- 2012\par
+
+Board member -- Hobson Village Community Association\hfill
+2006 -- 2008\par
+
+Officer -- Triangle Fraternity, Alpha Chapter\hfill
+1997 -- 1998
+
+Eagle Scout -- Boy Scouts of America\hfill
+1994%
+}
+\end
